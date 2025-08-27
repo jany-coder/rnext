@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
         <nav className="bg-gray-800 text-white p-4">
           <ul className="flex space-x-4">
             <li><CustomLink path='/'>Home</CustomLink></li>
-            <li><CustomLink path='/dashboard/settings'>Settings</CustomLink></li>
+            <li><CustomLink prefetch={false} path='/dashboard/settings'>Settings</CustomLink></li>
+            <li><CustomLink path='/dashboard/analytics'>Analytics</CustomLink></li>
             <li><CustomLink path='/contact-us'>Contact Us</CustomLink></li>
           </ul> 
         </nav>
